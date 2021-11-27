@@ -1,0 +1,80 @@
+cor_ans = ['amazon', 'nile', 'asia', 'russia', 'china']
+score = 0
+print('''Welcome To Varenya's Smart Quiz
+Each question 10 points
+ABOVE 30 POINTS WILL ONLY PASS THE QUIZ
+Please write in small letters only
+Write the answer not the option(like a)
+Do you want to play ('y/n')''')
+user = input('')
+
+if (user == 'y' or user == 'Y') :
+    print('What is the largest river in the world ?')
+    print('a) nile')
+    print('b) amazon')
+    print('c) sarawati')
+    print('d) indus')
+    que_1 = input('')
+    if (que_1 == cor_ans[0]) :
+        print('Correct :)')
+        score += 1
+    else :
+        print('Incorrect :(')
+    print('What is the longest river in the world ?')
+    print('a) mahanadi')
+    print('b) nile')
+    print('c) yamuna')
+    print('d) ganga')
+    que_2 = input('')
+    if (que_2 == cor_ans[1]) :
+        print('Correct :)')
+        score += 1
+    else :
+        print('Incorrect :(')
+    print('What is the biggest continent in the world ?')
+    print('a) africa')
+    print('b) south america')
+    print('c) russia')
+    print('d) asia')
+    que_3 = input('')
+    if (que_3 == cor_ans[2]) :
+        print('Correct :)')
+        score += 1
+    else :
+        print('Incorrect :(')
+    print('What is the biggest country in the world ?')
+    print('a) china')
+    print('b) russia')
+    print('c) africa')
+    print('d) india')
+    que_4 = input('')
+    if (que_4 == cor_ans[3]) :
+        print('Correct :)')
+        score += 1
+    else :
+        print('Incorrect :(')
+    print('Which is the largely populated country in the world ?')
+    print('a) africa')
+    print('b) china')
+    print('c) russia')
+    print('d) india')
+    que_5 = input('')
+    if (que_5 == cor_ans[4]) :
+        print('Correct :)')
+        score += 1
+    else :
+        print('Incorrect :(')
+    score *= 10
+    print('Your Score = ', score)
+    if (score<30) :
+        print("Failure is the first step to success. Don't Worry")
+    elif(score<50) :
+        print('Wow ! Nice Score. You Passed the exam')
+    elif(score == 50) :
+        print('Congracts ! Wnat a perfecr score you got.')
+
+elif (user == 'n' or user == 'N') :
+    print('''Thanks for replying
+    Happy Day''')
+else :
+    print('Invalid Answer')
